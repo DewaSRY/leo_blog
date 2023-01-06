@@ -1,0 +1,24 @@
+{% extends "base.html"%} {% load static %}
+<!-- ______________________________________________________________________________ -->
+{% block title %}All Leo blog {%endblock %}
+<!-- ______________________________________________________________________________ -->
+
+{% block content %}
+<article class="post featured">
+    <header class="major">
+      <span class="date">404 error</span>
+      <h2>
+        <a href="#"
+          >LEO 
+          <br>
+          FOR YOUR GROW
+          </a
+        >
+      </h2>
+    </header>
+    <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+    <ul class="actions special">
+      <li><a href="{% url "allArticle" %}" class="button large">BACK TO LEO BLOG</a></li>
+    </ul>
+  </article>
+{% endblock %}
