@@ -1,0 +1,18 @@
+{% load static %}
+
+<section class="posts">
+  <article>
+    <header>
+      <span class="date">April 24, 2017</span>
+      <h2>
+        <a href="#"> {{content.title|title}}</a>
+      </h2>
+    </header>
+    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+    <p>{{content.article|linebreaks|urlize|truncatewords:25}}....</p>
+    <ul class="actions special">
+      <li><a href="{% url "SingelArticle" content.slug %}"class="button">Full Article</a></li>
+    </ul>
+  </article>
+  <h1></h1>
+</section>

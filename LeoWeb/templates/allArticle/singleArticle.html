@@ -1,0 +1,22 @@
+{% extends "base.html"%} 
+{% load static %}
+<!-- ______________________________________________________________________________ -->
+{% block title %}{{content.title|title}} {%endblock %} {% block content %}
+
+  <article>
+    <header>
+      <span class="date"></span>
+      <h2>
+        <a href="#"> {{content.title|title}}</a>
+      </h2>
+    </header>
+    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+    <p>{{content.article|linebreaks|urlize}}....</p>
+    <ul class="actions special">
+      <li><a href="{% url "allArticle" %}" class="button">LEO BLOG</a></li>
+    </ul>
+  </article>
+  <h1></h1>
+
+<!-- ______________________________________________________________________________ -->
+{% endblock %}

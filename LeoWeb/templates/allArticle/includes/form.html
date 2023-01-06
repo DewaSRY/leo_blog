@@ -1,0 +1,19 @@
+{% load static %}
+<!-- <article class="post featured"> -->
+<footer>
+  <section>
+    <form method="post" action="{% url 'getEmail' %}">
+      {% csrf_token %}
+      <div class="fields">
+        <div class="field">
+          {% for email in form %} {{email.label}} {{email}} {% endfor %}
+        </div>
+      </div>
+      <ul id="email" class="actions">
+        <li><input type="submit" value="SUBSCRUBE OUR BLOG" /></li>
+      </ul>
+    </form>
+  </section>
+</footer>
+
+<!-- </article> -->

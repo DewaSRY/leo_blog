@@ -1,0 +1,24 @@
+{% extends "base.html"%} {% load static %}
+<!-- ______________________________________________________________________________ -->
+{% block title %}All Leo blog {%endblock %}
+<!-- ______________________________________________________________________________ -->
+{% block Intro %}
+<div>{% include "./includes/intro.html" %}</div>
+{% endblock %}
+<!-- ______________________________________________________________________________ -->
+{% block navbar %}
+<div>{% include "./includes/navbar.html" %}</div>
+{% endblock %}
+<!-- ______________________________________________________________________________ -->
+{% block content %}
+<!-- Intro -->
+<section class="posts">
+  {% for content in contents%}
+  <div>{% include "./includes/list.html" %}</div>
+  {% endfor %}
+</section>
+{% block footer %}
+<div>{% include "./includes/form.html" %}</div>
+{% endblock %}
+<!-- ______________________________________________________________________________ -->
+{% endblock %}
